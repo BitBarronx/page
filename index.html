@@ -1,3 +1,76 @@
-<html>
-<h1> YES I AM PAGE </h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BitBarron</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: #000;
+      color: #0ff;
+      font-family: 'Share Tech Mono', monospace;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      text-align: center;
+      flex-direction: column;
+      padding: 2rem;
+    }
+
+    .logo {
+      max-width: 300px;
+      width: 80%;
+      margin-bottom: 1.5rem;
+      animation: flicker 2s infinite alternate;
+    }
+
+    h1 {
+      font-size: 2.2rem;
+      letter-spacing: 0.15em;
+      margin-bottom: 0.5rem;
+      text-shadow: 0 0 5px #0ff, 0 0 20px #00f;
+    }
+
+    p {
+      font-size: 1.2rem;
+      color: #aaa;
+      animation: blink 1.5s infinite;
+    }
+
+    @keyframes flicker {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.7; }
+    }
+
+    @keyframes blink {
+      0% { opacity: 1; }
+      50% { opacity: 0.3; }
+      100% { opacity: 1; }
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 1.5rem;
+      }
+
+      p {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <img src="bitbarron.png" alt="BitBarron logo" class="logo" />
+  <h1>BitBarron Systems</h1>
+  <p>Landing sequence initiated. Systems coming online...</p>
+</body>
 </html>
